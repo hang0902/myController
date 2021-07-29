@@ -7,11 +7,7 @@ const MongoClient = require('mongodb').MongoClient;
 var Services = require('node-windows').Service;
 
 
-var svc = new Services({
-    name : 'my-npm',
-    description : 'Example App',
-    script: 'C:\Users\jacky\myControllerApp\app.js'
-});
+
 
 const url = 'mongodb+srv://test_user_2021:867721@cluster0.x3sev.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const PORT = 4000;
@@ -145,11 +141,11 @@ MongoClient.connect(url , function (err , db ){
     })
 });
 
-svc.on('install',function(){
-    console.log('Install complete.');
-    svc.start();
-});
+// svc.on('install',function(){
+//     console.log('Install complete.');
+//     svc.start();
+// });
 
-svc.install();
+// svc.install();
 
 
