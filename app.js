@@ -4,7 +4,7 @@ var SocketServer = require("ws").Server;
 var fs = require("fs");
 const express = require("express");
 const MongoClient = require('mongodb').MongoClient;
-var Services = require('node-windows').Service;
+//var Services = require('node-windows').Service;
 
 
 
